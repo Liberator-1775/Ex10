@@ -4,12 +4,12 @@
 
 template<class T>
 class MyStack {
-private:
+ private:
     T *arr;
     int top;
     int amount;
 
-public:
+ public:
     explicit MyStack(int num) {
         arr = new T[num];
         top = -1;

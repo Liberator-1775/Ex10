@@ -43,7 +43,8 @@ std::string infix2postfix(const std::string& infix) {
         } else {
             if (priority(i) == 4) {
                 continue;
-            } else if (priority(i) == 0 || st.isEmpty() || priority(i) > priority(st.get())) {
+            } else if (priority(i) == 0 || st.isEmpty()
+            || priority(i) > priority(st.get())) {
                 st.push(i);
             } else if (priority(i) == 1) {
                 while (priority(st.get()) != 0) {
